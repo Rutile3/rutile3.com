@@ -20,3 +20,12 @@
 - 生成指示（最終版）：ダークグレー背景、左に既存ロゴ、右に白文字の「Rutile3」のみを配置し、オレンジ色（#ff9800）の下線を引く。
 - og:imageにhttps://rutile3.com/assets/ogp.pngを設定し、画像サイズと代替説明も追加した。Twitter Cardはsummary_large_imageを使用する。
 - 画像の文字・余白・見切れを目視確認し、メタ情報のURLとgit diff --checkを確認した。SNS共有表示と公開URLの応答は公開後の確認として残す。
+
+## 2026-10-07：404ページを追加
+
+- GitHub Pages向けにルートへ404.htmlを追加し、「ページが見つかりません」とトップページへ戻るリンクを掲載した。
+- 既存のBootstrapとstyles.cssを利用し、ダークグレーの背景と黄色のアクセントを使用した。
+- CSS・favicon・ロゴ画像・トップへのリンクはルート相対パスとし、深いURLでもサイトのルートを参照する構成にした。
+- 固有のタイトルとnoindexを設定した。トップページのcanonical・OGPとJavaScriptは複製していない。
+- README.mdの構成一覧とdocs/task-list.mdを更新した。
+- 現在の作業方針に従い、ブラウザ表示とGitHub Pagesでの動作確認は実施していない。
