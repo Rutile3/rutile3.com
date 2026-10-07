@@ -38,10 +38,8 @@
  * 2) COMPONENTS / UTILITIES（サイト固有の見た目）
  * =======================================================*/
 
-/* 背景をLit.Link風の質感に
-   ※ テキスト色はテーマ変数で決まるので color 指定は外す */
+/* グレーの背景にグラデーションで質感を付ける */
 .bg-texture {
-    /* 画像を使うなら： background: url('assets/bg.jpg') center/cover fixed; */
     background:
         radial-gradient(circle at 20% 20%, rgba(255, 255, 255, .06), transparent 40%),
         radial-gradient(circle at 80% 0%, rgba(0, 0, 0, .08), transparent 40%),
@@ -87,10 +85,4 @@
     object-fit: cover;
     background: var(--img-bg);
     display: block;
-}
-
-/* ダッシュ境界（空きスロット用） */
-.border-dashed {
-    border: 2px dashed var(--bs-border-color);
-    background: rgba(255, 255, 255, .03);
 }
