@@ -43,11 +43,4 @@ function renderCards(sectionId, data) {
     });
 }
 
-// DOM読み込み後にカードをレンダリング
-document.addEventListener('DOMContentLoaded', async () => {
-    const data = await loadData();
-    if (!data) return; // データがない場合は処理をスキップ
-    renderCards('games-section', data.games);
-    renderCards('tools-section', data.tools);
-    renderCards('media-section', data.media);
-});
+// 作品カードはindex.htmlに直接記述するため、読み込み時の描画は行わない。
