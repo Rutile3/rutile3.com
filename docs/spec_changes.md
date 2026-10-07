@@ -104,3 +104,24 @@
 - 「趣味・日常のメモ」からRutile3、「プログラミング・ITの技術メモ」からRutile3-Techへの遷移確認依頼に対し、ユーザーから「遷移に問題ないことを確認しました。」との報告を受けた。
 - ユーザーによる手動確認結果として、docs/task-list.mdの各Cosenseプロジェクトへのリンク遷移確認を完了に更新した。Codexによるブラウザ確認は実施していない。
 - 今回は確認結果の文書更新のみで、サイトのコードは変更していない。
+
+## 2026-10-07：Webツール4件の紹介文を具体化
+
+- 分類中心だったツール4件の説明を、用途が分かる1文の紹介に変更した。作品名・画像・リンク・順序・CSSクラスは維持した。
+- ドット絵リサイザー：ドット絵をにじませず、整数倍率で拡大できるWebツールです。
+- Lua ビットマスク判定式ジェネレータ：整数の集合から、ビットマスクとLuaの判定式を生成するWebツールです。
+- Lua abs変換器：Luaコードのabs(x)を含む条件式を、二乗や範囲指定などの式に変換するWebツールです。
+- 【パタポン2】育成コスト計算ツール：パタポン2で、現在レベルから目標レベルまでの育成に必要な素材数を計算するWebツールです。
+
+### 情報源
+
+- [ドット絵リサイザー README](https://github.com/Rutile3/pixel-art-resizer/blob/master/README.md)：最近傍補間と整数倍率の拡大機能。
+- [Lua ビットマスク判定式ジェネレータ README](https://github.com/Rutile3/lua-bitmask-expression-generator/blob/master/README.md)：整数集合からのマスク・判定式生成。
+- [Lua abs変換器 README](https://github.com/Rutile3/lua-abs-converter/blob/master/README.md)：absを含む条件式の変換。
+- [パタポン2育成コスト計算ツール](https://rutile3.github.io/patapon2-growth-cost-calculator/)：現在・目標レベルの入力と素材名・必要数の出力。
+
+### 確認結果
+
+- ツール説明4件以外のHTMLが変更前と一致することを確認した。
+- 公開ページを取得できなかった3件はGitHub連携からREADMEを確認した。予定機能や未確認の機能は紹介に含めていない。
+- git diff --checkと改行・タブ混入・文字化けを確認した。PC・モバイルの表示確認は未実施。
