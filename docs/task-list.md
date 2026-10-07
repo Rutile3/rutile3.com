@@ -82,10 +82,11 @@ feat/static-project-cardsでは、優先度Sの「1. JavaScript依存のカー�
 
 ### 6. OGP / SEO
 
-- [ ] canonicalを https://rutile3.com/ に設定する。
-- [ ] og:type、og:title、og:description、og:url、twitter:cardを設定し、title・descriptionと整合させる。
-- [ ] 使用可能な実在画像がある場合のみog:imageを設定する。
-- [ ] 適切なOGP画像がない場合は、画像追加をTODOにし、推奨ファイル名（例：assets/ogp.png）、推奨サイズ（1200×630）、追加後のindex.htmlのog:image設定箇所と公開URLを記載する。画像生成は必須にしない。
+- [x] canonicalを https://rutile3.com/ に設定する。
+- [x] og:type、og:title、og:description、og:url、twitter:cardを設定し、title・descriptionと整合させる。
+- [x] 使用可能な実在画像がある場合のみog:imageを設定する。
+- 対象外：OGP画像未用意時のTODO。avatar.pngを元に1200×630のassets/ogp.pngを作成して設定済み。
+- [ ] 公開後にOGP画像のURLとSNS共有時の表示を確認する。
 
 ## 優先度B：可能なら対応
 
@@ -171,3 +172,12 @@ feat/static-project-cardsでは、優先度Sの「1. JavaScript依存のカー�
 - [ ] 今回対応しなかった項目と理由をまとめる。
 - [ ] 手動作業が必要な項目（OGP画像追加、GitHub About欄等）を具体的に提示する。
 - [ ] 今後改善するとよい項目をまとめる。
+
+## 開発環境：Codexのアクセス範囲の制限
+
+- [ ] AGENTS.mdに、調査・編集・一時ファイルの作成を原則リポジトリ内に限定し、外部ユーザーファイルへのアクセスは対象パス・目的・操作内容を説明して事前承認を得るルールを追加する。OS・ランタイムの利用とユーザーファイルの参照を区別し、予期しない生成物は報告する。
+- [ ] 利用中のCodexのバージョン・実行方式・管理ポリシーを確認し、リポジトリ外の読み取り・書き込みを原則禁止する権限設定の適用可否を調べる。
+- [ ] 対応環境ではワークスペース限定の権限設定を適用し、必要なOS・ランタイム・スキル・画像生成・一時領域の例外を必要最小限に整理する。管理側の設定変更が必要なら手順を記録する。
+- [ ] 制限後にリポジトリ内の通常作業が可能で、許可していないリポジトリ外へのアクセスが拒否されることを確認する。検証には機密情報を含まないテストファイルを使用する。
+
+参考：[公式のワークスペース限定設定](https://learn.chatgpt.com/docs/permissions)。AGENTS.mdの行動指示と、実際のサンドボックスによるアクセス制限を区別して整備する。
