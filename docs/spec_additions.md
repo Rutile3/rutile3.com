@@ -29,3 +29,10 @@
 - 固有のタイトルとnoindexを設定した。トップページのcanonical・OGPとJavaScriptは複製していない。
 - README.mdの構成一覧とdocs/task-list.mdを更新した。
 - 現在の作業方針に従い、ブラウザ表示とGitHub Pagesでの動作確認は実施していない。
+
+## 2026-10-07：アクセス解析の利用説明を追加
+
+- index.htmlのフッターに「アクセス解析のためGoogle Analyticsを利用しています。」を追加した。既存の文字色・文字サイズとBootstrapの余白クラスを利用した。
+- 既存の計測ID、Google Analyticsの読み込み・初期化処理は変更していない。Cookie同意管理やPrivacyページは追加していない。
+- 未確認の保存期間・収集範囲・法的保証などは記載していない。
+- docs/task-list.mdのT05を対応済みに更新した。現在の作業方針に従い、ブラウザでの表示・動作確認は実施していない。
