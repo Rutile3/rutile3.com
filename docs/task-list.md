@@ -102,8 +102,8 @@ feat/static-project-cardsでは、優先度Sの「1. JavaScript依存のカー�
 
 ### 10. 旧link-hub名称の整理
 
-- [ ] link-hub.code-workspaceの用途と旧名称の参照箇所を確認する。
-- [ ] rutile3.com.code-workspaceへ改名するか、不要なら削除する。必要な参照を更新し、利用を壊さないことを確認する。
+- [x] link-hub.code-workspaceの用途と旧名称の参照箇所を確認する。ルートフォルダーを開くVS Code設定で、旧名称の参照はこのタスクリストのみ。
+- [x] rutile3.com.code-workspaceへ改名するか、不要なら削除する。必要な参照を更新し、利用を壊さないことを確認する。改名を採用し、設定内容のバイト単位の一致と参照先「.」の存在を確認した。旧名称は着手時の記録・タスク名として残す。
 
 ### 11. JavaScriptのエラー表示
 
