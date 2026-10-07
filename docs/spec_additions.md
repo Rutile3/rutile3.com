@@ -18,7 +18,7 @@
 - canonicalとog:type、og:title、og:description、og:url、og:image、twitter:cardを追加した。titleは既存値を維持し、descriptionとog:descriptionを統一した。
 - assets/avatar.pngを参照して組み込みimage_genでOGP画像を生成し、1200×630へリサイズしてassets/ogp.pngに保存した。元画像は変更していない。
 - 生成指示（最終版）：ダークグレー背景、左に既存ロゴ、右に白文字の「Rutile3」のみを配置し、オレンジ色（#ff9800）の下線を引く。
-- og:imageにhttps://rutile3.com/assets/ogp.pngを設定し、画像サイズと代替説明も追加した。Twitter Cardはsummary_large_imageを使用する。
+- og:imageに<https://rutile3.com/assets/ogp.png>を設定し、画像サイズと代替説明も追加した。Twitter Cardはsummary_large_imageを使用する。
 - 画像の文字・余白・見切れを目視確認し、メタ情報のURLとgit diff --checkを確認した。SNS共有表示と公開URLの応答は公開後の確認として残す。
 
 ## 2026-10-07：404ページを追加

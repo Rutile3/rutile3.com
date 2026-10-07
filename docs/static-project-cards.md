@@ -35,7 +35,7 @@ index.htmlにカードを直接記述する。10件という規模では、生�
 
 ## 公開構成
 
-ユーザーの共有事項により、このリポジトリはGitHub Pagesで公開されている。ルートにindex.html、styles.css、app.js、assetsがあり、CNAMEはrutile3.comを指定する。公開URLはhttps://rutile3.com/。
+ユーザーの共有事項により、このリポジトリはGitHub Pagesで公開されている。ルートにindex.html、styles.css、app.js、assetsがあり、CNAMEはrutile3.comを指定する。公開URLは[https://rutile3.com/](https://rutile3.com/)。
 
 GitHub側の公開元ブランチ・ディレクトリ・デプロイ方式・独自ドメイン設定の詳細は、この文書では未確認。ローカルの構成だけから公開設定を推測しない。設定の調査が必要な場合はSettings → Pagesが参照先になるが、現在の必須タスクには含めない。
 
@@ -49,7 +49,7 @@ GitHub側の公開元ブランチ・ディレクトリ・デプロイ方式・�
 - app.jsの描画呼び出しを停止した後、不要な生成・取得・alert処理とassets/data.jsonを削除した。年号更新は維持した。
 - styles.css、CNAME、Google Analytics、Bootstrapの読み込み、既存URLは静的化では変更しなかった。
 - HTML直接記述を採用したため、ビルド時HTML生成と生成手順の整備は対象外とした。
-- originはgit@github.com:Rutile3/rutile3.com.git、当時の作業ブランチはfeat/static-project-cardsだった。
+- originは`git@github.com:Rutile3/rutile3.com.git`、当時の作業ブランチはfeat/static-project-cardsだった。
 - 当時、ローカルの追跡ファイルに独自のGitHub Actionsワークフローやビルド設定はなかった。GitHub CLIを利用できず、GitHub APIへの接続も失敗したため、GitHub側の公開設定は確定できなかった。
 - マージ前のPC・モバイル表示、JavaScript有効・無効時の動作、リンクの開き方、公開設定と、マージ後の公開動作の確認を予定していた。現在は追加確認を必須としない。
 
