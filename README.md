@@ -25,6 +25,18 @@ Rutile3の個人ポートフォリオサイトです。個人制作のゲーム�
 | docs/ | 改善タスク、設計方針、変更記録 |
 | rutile3.com.code-workspace | VS Codeでルートフォルダーを開く設定 |
 
+## 現在の掲載内容
+
+ゲーム4件、ツール5件、メモ・記録2件の計11件を掲載しています。ツールにはChrome拡張のTab Link Exporterを含みます。404ページ、SEO / OGP設定、フッターの年号自動更新とアクセス解析の利用説明も実装済みです。
+
+## 作業フロー
+
+1. devから作業ブランチを作成し、改修をコミット単位で進めます。
+2. 作業ブランチからdevへPRを作成し、Squash and mergeで取り込みます。
+3. 公開する変更がまとまったらdevからmasterへPRを作成し、Create a merge commitで取り込みます。devは継続して使用します。
+
+コミットメッセージは「【概要】説明」の形式に統一します。作業ルールとアクセス範囲は[AGENTS.md](AGENTS.md)に従います。新しいチャットでは、このREADME・AGENTS.md・[TODO](docs/task-list.md)を起点にします。
+
 ## コンテンツの追加・更新
 
 1. index.htmlのgames-section（ゲーム）、tools-section（ツール）、media-section（メモ・記録）から対象の一覧を選びます。
@@ -62,4 +74,5 @@ Rutile3の個人ポートフォリオサイトです。個人制作のゲーム�
 GitHub Pagesで公開しています。公開元ブランチ・フォルダー・デプロイ方式は、この文書では未確認です。設定を調べる必要がある場合は、GitHubのSettings → Pagesを参照できます。現在の作業方針では、公開設定の調査やマージ後のデプロイ・動作確認を必須タスクには含めません。
 
 - [改善タスクリスト](docs/task-list.md)
+- [作品カードの設計](docs/static-project-cards.md) / [作品の掲載内容](docs/project-content.md)
 - [追加仕様](docs/spec_additions.md) / [仕様変更](docs/spec_changes.md) / [不具合修正](docs/bug_fixes.md)
