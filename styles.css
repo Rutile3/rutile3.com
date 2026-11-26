@@ -58,25 +58,15 @@
     display: inline-block;
 }
 
-/* カードのホバー演出 */
-.hover-rise {
-    transition: transform .15s ease, box-shadow .15s ease;
-}
-
-.hover-rise:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-}
-
-/* 動きを控えたいユーザーへの配慮 */
-@media (prefers-reduced-motion: reduce) {
+/* 動きの軽減が指定されていない場合のカードのホバー演出 */
+@media (prefers-reduced-motion: no-preference) {
     .hover-rise {
-        transition: none;
+        transition: transform .15s ease, box-shadow .15s ease;
     }
 
     .hover-rise:hover {
-        transform: none;
-        box-shadow: none;
+        transform: translateY(-2px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
 }
 
