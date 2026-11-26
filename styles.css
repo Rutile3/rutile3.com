@@ -22,10 +22,11 @@
     --bs-link-color: #fff;
     --bs-link-hover-color: var(--accent);
 
-    /* 枠線/カードなども暗色に寄せる */
     --bs-border-color: var(--border);
+}
+
+[data-bs-theme="dark"] .card {
     --bs-card-bg: var(--surface);
-    --bs-card-color: #fff;
 }
 
 /* ムードに合わせて muted も明るめに */
