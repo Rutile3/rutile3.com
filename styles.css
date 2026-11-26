@@ -86,3 +86,7 @@
     background: var(--img-bg);
     display: block;
 }
+
+.card-img-pixelated {
+    image-rendering: pixelated;
+}
