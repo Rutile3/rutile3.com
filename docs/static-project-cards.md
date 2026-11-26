@@ -7,7 +7,7 @@
 
 app.jsはフッターの年号更新のみを行う。カード生成・データ取得・alert()による取得エラー表示はなく、移行元のassets/data.jsonは削除済み。ビルド工程やnpm依存関係は不要。
 
-通常カードはモバイル2列・md以上3列・xl以上4列で表示する。新しい作業予定は[改善TODO](task-list.md)で管理する。
+通常カードはモバイル2列・md以上3列・xl以上4列で表示する。新しい作業予定は[GitHub Issues](https://github.com/Rutile3/rutile3.com/issues)で管理する。
 
 ## 採用方式と理由
 
