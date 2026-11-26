@@ -22,10 +22,11 @@
     --bs-link-color: #fff;
     --bs-link-hover-color: var(--accent);
 
-    /* 枠線/カードなども暗色に寄せる */
     --bs-border-color: var(--border);
+}
+
+[data-bs-theme="dark"] .card {
     --bs-card-bg: var(--surface);
-    --bs-card-color: #fff;
 }
 
 /* ムードに合わせて muted も明るめに */
@@ -57,25 +58,15 @@
     display: inline-block;
 }
 
-/* カードのホバー演出 */
-.hover-rise {
-    transition: transform .15s ease, box-shadow .15s ease;
-}
-
-.hover-rise:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-}
-
-/* 動きを控えたいユーザーへの配慮 */
-@media (prefers-reduced-motion: reduce) {
+/* 動きの軽減が指定されていない場合のカードのホバー演出 */
+@media (prefers-reduced-motion: no-preference) {
     .hover-rise {
-        transition: none;
+        transition: transform .15s ease, box-shadow .15s ease;
     }
 
     .hover-rise:hover {
-        transform: none;
-        box-shadow: none;
+        transform: translateY(-2px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
 }
 
@@ -85,4 +76,8 @@
     object-fit: cover;
     background: var(--img-bg);
     display: block;
+}
+
+.card-img-pixelated {
+    image-rendering: pixelated;
 }
